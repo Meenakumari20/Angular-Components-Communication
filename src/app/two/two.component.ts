@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommunicationService } from '../communication.service';
 
 @Component({
   selector: 'app-two',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TwoComponent implements OnInit {
 
-  constructor() { }
+  sharedInput = '';
+
+  constructor(private communication: CommunicationService) { }
 
   ngOnInit() {
+    this.communication.currentMessage.subscribe(message => this.sharedInput = message);
   }
 
 }
