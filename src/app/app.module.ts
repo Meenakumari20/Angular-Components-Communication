@@ -10,6 +10,9 @@ import { ChildToParentComponent } from './child-to-parent/child-to-parent.compon
 import { CtopChildComponent } from './child-to-parent/ctop-child/ctop-child.component';
 import { HomeComponent } from './home/home.component';
 import { SiblingsComponent } from './siblings/siblings.component';
+import { OneComponent } from './one/one.component';
+import { TwoComponent } from './two/two.component';
+import { ThreeComponent } from './three/three.component';
 
 const routes: Routes = [
   { path: 'parent-to-child', component: ParentToChildComponent },
@@ -27,7 +30,10 @@ const routes: Routes = [
     ChildToParentComponent,
     CtopChildComponent,
     HomeComponent,
-    SiblingsComponent
+    SiblingsComponent,
+    OneComponent,
+    TwoComponent,
+    ThreeComponent
   ],
   imports: [
     BrowserModule,

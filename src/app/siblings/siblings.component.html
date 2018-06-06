@@ -1,3 +1,30 @@
-<p>
-  siblings works!
-</p>
+<div class="container-fluid mt-5">
+  <h1 class="text-center">Sibling Components Using <strong>Shared Service & Event Emmiter</strong></h1>
+  <div class="row mt-5">
+      <div class="col-md-4">
+          <div class="card">
+              <h4 class="card-header">Component 1</h4>
+              <div class="card-body">
+                  <h4 class="card-title text-info">Data Sent From Component 1</h4>
+                  <app-one></app-one>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+              <h4 class="card-header">Component 2</h4>
+              <div class="card-body">
+                <app-two></app-two>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+            <h4 class="card-header">Component 3</h4>
+            <div class="card-body">
+              <app-three></app-three>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
