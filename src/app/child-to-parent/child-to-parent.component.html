@@ -1,0 +1,39 @@
+<div class="container">
+  <h1 class="text-center">Child To Parent Using
+    <strong>@Output</strong>
+  </h1>
+  <div class="row" style="margin-top: 20px;">
+    <div class="col-md-6">
+      <div class="card">
+        <h4 class="card-header">Example</h4>
+        <div class="card-body">
+          <h4 class="card-title text-info">Parent Component</h4>
+          <p>{{ childInput }}</p>
+
+          <p [hidden]="childInput">
+            <i>Enter text in child component to see the data transfer.</i>
+          </p>
+          <hr>
+          <h4 class="card-title text-info">Child Component</h4>
+          <app-ctop-child (messageEvent)="receiveMessage($event)"></app-ctop-child>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <h4 class="card-header">Code</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <a href="https://github.com/shindesharad71/Angular-Components-Communication/tree/master/src/app/child-to-parent" target="_blank">
+              <li class="list-group-item">Parent Component</li>
+            </a>
+            <a href="https://github.com/shindesharad71/Angular-Components-Communication/tree/master/src/app/child-to-parent/ctop-child"
+              target="_blank">
+              <li class="list-group-item">Child Component</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
