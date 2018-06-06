@@ -8,10 +8,15 @@ import { ParentToChildComponent } from './parent-to-child/parent-to-child.compon
 import { PtocChildComponent } from './parent-to-child/ptoc-child/ptoc-child.component';
 import { ChildToParentComponent } from './child-to-parent/child-to-parent.component';
 import { CtopChildComponent } from './child-to-parent/ctop-child/ctop-child.component';
+import { HomeComponent } from './home/home.component';
+import { SiblingsComponent } from './siblings/siblings.component';
 
 const routes: Routes = [
   { path: 'parent-to-child', component: ParentToChildComponent },
-  { path: 'child-to-parent', component: ChildToParentComponent }
+  { path: 'child-to-parent', component: ChildToParentComponent },
+  { path: 'siblings', component: SiblingsComponent },
+  { path: 'home', component: HomeComponent },
+  { path: '**', component: HomeComponent },
 ];
 
 @NgModule({
@@ -20,7 +25,9 @@ const routes: Routes = [
     ParentToChildComponent,
     PtocChildComponent,
     ChildToParentComponent,
-    CtopChildComponent
+    CtopChildComponent,
+    HomeComponent,
+    SiblingsComponent
   ],
   imports: [
     BrowserModule,
